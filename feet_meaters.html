@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function feetToMeaters(feet) {
+            feet = parseFloat(feet);
+            meter = 0.305 * feet;
+            return meter;
+        }
+        function meatersToFeer(meter) {
+            meter = parseFloat(meter);
+            feet = 3.279 * meter;
+            return feet;
+        }
+        for (let i=0;i<10;i++){
+            document.write(i + " feet = " +feetToMeaters(i) +" meter" + "<br>");
+        }
+        for (let i=20;i<65;i++) {
+            document.write(i + " meter = " +meatersToFeer(i) +" feet" + "<br>");
+        }
+    </script>
+
+</body>
+</html>
